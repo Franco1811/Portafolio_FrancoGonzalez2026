@@ -113,7 +113,8 @@ export const CERTIFICATIONS = [
         issuer: "DataCamp",
         date: "2024",
         link: "https://www.datacamp.com/statement-of-accomplishment/track/bdb9ea4d45705e20fbca78e1eca607f462ff972a?raw=1",
-        icon: "datacamp"
+        // Usamos icono de base de datos para representar visualmente la certificación
+        icon: "https://img.icons8.com/?size=100&id=13406&format=png&color=FD7E14" 
     },
     {
         id: 2,
@@ -121,7 +122,8 @@ export const CERTIFICATIONS = [
         issuer: "DataCamp",
         date: "2024",
         link: "https://www.datacamp.com/statement-of-accomplishment/track/e520d29273fd4fa9d4a62387944cb3a2e58a2ae9?raw=1",
-        icon: "datacamp"
+        // Icono oficial de Excel
+        icon: "https://img.icons8.com/?size=100&id=11594&format=png&color=FD7E14" 
     },
     {
         id: 3,
@@ -129,7 +131,8 @@ export const CERTIFICATIONS = [
         issuer: "ETS Global",
         date: "2023",
         link: "https://drive.google.com/file/d/1aPt0PYRqLT01SFNdFre-3Kn3lYsH-ajs/view?usp=sharing",
-        icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Icpna_logo.png/1200px-Icpna_logo.png"
+        // Icono de Diploma/Certificado naranja
+        icon: "https://img.icons8.com/?size=100&id=103425&format=png&color=FD7E14"
     },
     {
         id: 4,
@@ -137,7 +140,8 @@ export const CERTIFICATIONS = [
         issuer: "ICPNA",
         date: "2023",
         link: "https://drive.google.com/file/d/1UiYb5HAkosgBP7d3yhL5DG2DzZc48el1/view?usp=sharing",
-        icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Icpna_logo.png/1200px-Icpna_logo.png"
+        // Icono de Diploma/Certificado naranja
+        icon: "https://img.icons8.com/?size=100&id=103425&format=png&color=FD7E14"
     }
 ];
 
