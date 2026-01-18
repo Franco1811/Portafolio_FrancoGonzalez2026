@@ -1,4 +1,4 @@
-# Portfolio 2026 - Franco Gonzalez
+# Portafolio 2026 - Franco González
 
 Bienvenido al repositorio de mi portafolio profesional. Este proyecto es una Single Page Application (SPA) moderna, rápida y responsiva, diseñada para mostrar mis habilidades como **Desarrollador Web** y **Analista de Datos**.
 
@@ -27,7 +27,7 @@ src/
 
 ## Instalación y Uso
 
-Si deseas correr este proyecto localmente:
+Si deseas ejecutar este proyecto localmente:
 
 1.  **Clonar el repositorio:**
     ```bash
@@ -40,7 +40,7 @@ Si deseas correr este proyecto localmente:
     npm install
     ```
 
-3.  **Correr el servidor de desarrollo:**
+3.  **Iniciar el servidor de desarrollo:**
     ```bash
     npm run dev
     ```
@@ -54,4 +54,4 @@ Si deseas correr este proyecto localmente:
 
 ---
 
-Desarrollado con ❤️ por **Franco Gonzalez**.
+Desarrollado con ❤️ por **Franco González**.
