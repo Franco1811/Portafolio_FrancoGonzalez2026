@@ -133,7 +133,7 @@ export const CERTIFICATIONS = [
         issuer: "ETS Global",
         date: "2023",
         link: "https://drive.google.com/file/d/1aPt0PYRqLT01SFNdFre-3Kn3lYsH-ajs/view?usp=sharing",
-        icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/ETS_Logo.svg/512px-ETS_Logo.svg.png"
+        icon: "https://img.icons8.com/?size=100&id=103425&format=png&color=FD7E14"
     },
     {
         id: 4,
@@ -141,7 +141,7 @@ export const CERTIFICATIONS = [
         issuer: "ICPNA",
         date: "2023",
         link: "https://drive.google.com/file/d/1UiYb5HAkosgBP7d3yhL5DG2DzZc48el1/view?usp=sharing",
-        icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Icpna_logo.png/640px-Icpna_logo.png"
+        icon: "https://img.icons8.com/?size=100&id=103425&format=png&color=FD7E14"
     }
 ];
 
