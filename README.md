@@ -2,7 +2,7 @@
 
 Bienvenido al repositorio de mi portafolio profesional. Este proyecto es una Single Page Application (SPA) moderna, rápida y responsiva, diseñada para mostrar mis habilidades como **Desarrollador Web** y **Analista de Datos**.
 
-## 🚀 Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 Este proyecto fue construido siguiendo las mejores prácticas de desarrollo moderno:
 
@@ -12,7 +12,7 @@ Este proyecto fue construido siguiendo las mejores prácticas de desarrollo mode
 -   **Animaciones:** [Framer Motion](https://www.framer.com/motion/)
 -   **Fuentes:** Inter & JetBrains Mono
 
-## 📂 Estructura del Proyecto
+## Estructura del Proyecto
 
 El código ha sido refactorizado para ser modular y escalable:
 
@@ -25,7 +25,7 @@ src/
 └── App.jsx          # Punto de entrada principal
 ```
 
-## 🛠️ Instalación y Uso
+## Instalación y Uso
 
 Si deseas correr este proyecto localmente:
 
@@ -45,7 +45,7 @@ Si deseas correr este proyecto localmente:
     npm run dev
     ```
 
-## ✨ Características Destacadas
+## Características Destacadas
 
 -   **Modo Oscuro/Claro:** Implementado con Context API y persistencia local.
 -   **Clean Code:** Separación estricta entre lógica, vista y datos.
