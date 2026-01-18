@@ -85,20 +85,24 @@ export const STACK = [
         items: [
             { name: "Python", icon: "python" },
             { name: "SQL (MySQL)", icon: "mysql" },
-            {
-                name: "Power BI",
-                icon: "https://img.icons8.com/?size=100&id=XZfQhFwZm1qP&format=png&color=FD7E14"
+            { 
+                name: "Power BI", 
+                icon: "https://img.icons8.com/?size=100&id=XZfQhFwZm1qP&format=png&color=FD7E14" 
+            }, 
+            { 
+                name: "Excel", 
+                icon: "https://img.icons8.com/?size=100&id=11594&format=png&color=FD7E14" 
             },
-            {
-                name: "Excel",
-                icon: "https://img.icons8.com/?size=100&id=11594&format=png&color=FD7E14"
-            },
+            { name: "Databricks", icon: "databricks" },
+            { name: "Google Colab", icon: "googlecolab" },
+            { name: "Looker Studio", icon: "looker" },
         ]
     },
     {
         category: "Backend & Core",
         items: [
-            { name: "Java", icon: "openjdk" },
+            // Java es muy importante para backend empresarial
+            { name: "Java", icon: "java" }, 
             { name: "Spring Boot", icon: "springboot" },
             { name: "Git", icon: "git" },
             { name: "Node.js", icon: "nodedotjs" },
@@ -113,8 +117,7 @@ export const CERTIFICATIONS = [
         issuer: "DataCamp",
         date: "2024",
         link: "https://www.datacamp.com/statement-of-accomplishment/track/bdb9ea4d45705e20fbca78e1eca607f462ff972a?raw=1",
-        // Usamos icono de base de datos para representar visualmente la certificación
-        icon: "https://img.icons8.com/?size=100&id=13406&format=png&color=FD7E14" 
+        icon: "datacamp"
     },
     {
         id: 2,
@@ -122,8 +125,7 @@ export const CERTIFICATIONS = [
         issuer: "DataCamp",
         date: "2024",
         link: "https://www.datacamp.com/statement-of-accomplishment/track/e520d29273fd4fa9d4a62387944cb3a2e58a2ae9?raw=1",
-        // Icono oficial de Excel
-        icon: "https://img.icons8.com/?size=100&id=11594&format=png&color=FD7E14" 
+        icon: "datacamp"
     },
     {
         id: 3,
@@ -131,8 +133,7 @@ export const CERTIFICATIONS = [
         issuer: "ETS Global",
         date: "2023",
         link: "https://drive.google.com/file/d/1aPt0PYRqLT01SFNdFre-3Kn3lYsH-ajs/view?usp=sharing",
-        // Icono de Diploma/Certificado naranja
-        icon: "https://img.icons8.com/?size=100&id=103425&format=png&color=FD7E14"
+        icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/ETS_Logo.svg/512px-ETS_Logo.svg.png"
     },
     {
         id: 4,
@@ -140,8 +141,7 @@ export const CERTIFICATIONS = [
         issuer: "ICPNA",
         date: "2023",
         link: "https://drive.google.com/file/d/1UiYb5HAkosgBP7d3yhL5DG2DzZc48el1/view?usp=sharing",
-        // Icono de Diploma/Certificado naranja
-        icon: "https://img.icons8.com/?size=100&id=103425&format=png&color=FD7E14"
+        icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Icpna_logo.png/640px-Icpna_logo.png"
     }
 ];
 
@@ -156,7 +156,7 @@ export const LANGUAGES = [
     {
         code: "EN",
         language: "Inglés",
-        level: "Intermedio (B2)",
+        level: "Intermedio (B1)",
         percentage: 65,
         color: "bg-blue-500"
     },
