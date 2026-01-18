@@ -139,19 +139,28 @@ const Stack = () => {
                             {CERTIFICATIONS.map((cert) => (
                                 <div key={cert.id} className="bg-white dark:bg-[#0f0f0f] p-6 rounded-2xl border border-gray-200 dark:border-[#262626] flex items-start gap-4 hover:border-orange-500/50 transition-colors">
                                     <div className="p-3 rounded-xl bg-gray-100 dark:bg-[#1a1a1a]">
+                                        {/* Lógica mejorada para iconos: Soporta URL completa o slug de SimpleIcons */}
                                         <img 
-                                            src={`https://cdn.simpleicons.org/${cert.icon}`} 
-                                            className="w-6 h-6 dark:invert" 
+                                            src={cert.icon.startsWith('http') ? cert.icon : `https://cdn.simpleicons.org/${cert.icon}`} 
+                                            className={`w-6 h-6 ${cert.icon.startsWith('http') ? '' : 'dark:invert'}`} 
                                             alt="issuer"
-                                            onError={(e) => e.target.src = "https://cdn.simpleicons.org/codepen"}
+                                            onError={(e) => e.target.src = "https://cdn.simpleicons.org/codepen"} // Fallback
                                         />
                                     </div>
                                     <div>
                                         <h4 className="font-bold text-gray-900 dark:text-white leading-tight mb-1">{cert.title}</h4>
                                         <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">{cert.issuer} • {cert.date}</p>
-                                        <a href={cert.link} className="inline-flex items-center gap-1 text-xs font-bold text-orange-500 hover:underline">
-                                            Ver Credencial <ExternalLink size={12} />
-                                        </a>
+                                        
+                                        {/* Renderizado condicional del botón de enlace */}
+                                        {cert.link && cert.link !== "#" ? (
+                                            <a href={cert.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs font-bold text-orange-500 hover:underline">
+                                                Ver Credencial <ExternalLink size={12} />
+                                            </a>
+                                        ) : (
+                                            <span className="inline-flex items-center gap-1 text-xs font-bold text-gray-400 cursor-not-allowed">
+                                                Certificado Físico
+                                            </span>
+                                        )}
                                     </div>
                                 </div>
                             ))}
