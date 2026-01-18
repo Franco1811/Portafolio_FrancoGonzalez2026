@@ -3,9 +3,23 @@ import { Github, ExternalLink, Code2, Database, Layout, Shield } from 'lucide-re
 import { motion, AnimatePresence } from 'framer-motion';
 import { PROJECTS } from '../constants/data';
 
+/**
+ * Seccion de Proyectos Destacados.
+ * 
+ * Exhibe el portafolio de trabajo empleando un sistema de filtrado por categoría en el cliente.
+ * 
+ * Características principales:
+ * 1. Filtrado de estado local: Permite transiciones instantáneas sin recargas.
+ * 2. Animaciones de entrada/salida: Usa `AnimatePresence` de Framer Motion para suavizar el cambio de categorías.
+ * 3. Cards interactivas: Efectos de hover y acciones claras (Ver código / Ver demo).
+ * 
+ * @component
+ */
 const Projects = () => {
+  // Estado para controlar la categoría activa del filtro (por defecto 'all')
   const [filter, setFilter] = useState("all");
 
+  // Lógica de filtrado computada en cada render (eficiente para listas < 100 items)
   const filteredProjects = filter === "all" 
     ? PROJECTS 
     : PROJECTS.filter(p => p.category === filter);

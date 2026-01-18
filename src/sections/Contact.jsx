@@ -2,10 +2,22 @@ import { ArrowUpRight, Copy, Check } from 'lucide-react';
 import { useState } from 'react';
 import { PROFILE } from '../constants/data';
 
+/**
+ * Sección de Contacto y Footer.
+ * 
+ * Punto de conversión final del portafolio.
+ * Ofrece rutas de contacto claras (Email con copia rápida, LinkedIn, GitHub).
+ * 
+ * Funcionalidad destacada:
+ * - Clipboard API: Permite copiar el email al portapapeles con feedback visual instantáneo.
+ */
 const Contact = () => {
   const [copied, setCopied] = useState(false);
 
-  // Función para copiar correo
+  /**
+   * Maneja la acción de copiar el email al portapapeles.
+   * Proporciona feedback visual temporal (cambio de icono) durante 2 segundos.
+   */
   const handleCopyEmail = () => {
     navigator.clipboard.writeText(PROFILE.socials.email);
     setCopied(true);
@@ -15,7 +27,7 @@ const Contact = () => {
   return (
     <section id="contacto" className="py-24 px-4 bg-white dark:bg-[#0a0a0a] relative overflow-hidden">
       
-      {/* Línea divisoria superior */}
+      {/* Línea divisoria superior con gradiente sutil */}
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-orange-500/50 to-transparent"></div>
 
       <div className="max-w-6xl mx-auto">

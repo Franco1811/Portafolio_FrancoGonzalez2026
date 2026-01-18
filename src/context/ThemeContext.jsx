@@ -1,9 +1,16 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 
+/**
+ * Contexto para manejar el estado del tema (claro/oscuro) en toda la aplicación.
+ */
 const ThemeContext = createContext();
 
+/**
+ * Proveedor del tema que encapsula la lógica de persistencia y cambio de clases CSS.
+ * @param {Object} props - Componentes hijos.
+ */
 export const ThemeProvider = ({ children }) => {
-    // 1. Verificar si ya hay una preferencia guardada o usar la del sistema
+    // Inicialización del estado: verifica localStorage o preferencia del sistema
     const [theme, setTheme] = useState(() => {
         if (localStorage.getItem('theme')) {
             return localStorage.getItem('theme');
@@ -11,7 +18,7 @@ export const ThemeProvider = ({ children }) => {
         return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     });
 
-    // 2. Aplicar la clase 'dark' al HTML cuando cambie el estado
+    // Efecto para sincronizar la clase 'dark' en el elemento raíz (html) y actualizar localStorage
     useEffect(() => {
         const root = window.document.documentElement;
         if (theme === 'dark') {
@@ -22,6 +29,7 @@ export const ThemeProvider = ({ children }) => {
         localStorage.setItem('theme', theme);
     }, [theme]);
 
+    // Función para alternar entre modos
     const toggleTheme = () => {
         setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
     };
@@ -33,5 +41,5 @@ export const ThemeProvider = ({ children }) => {
     );
 };
 
-// Hook personalizado para usar el tema en cualquier parte
+// Hook personalizado para acceder fácilmente al contexto del tema
 export const useTheme = () => useContext(ThemeContext);

@@ -1,3 +1,9 @@
+/**
+ * ARCHIVO DE DATOS CENTRALIZADO
+ * Este archivo actúa como la única fuente de verdad para el contenido del portafolio.
+ * Permite actualizar textos, enlaces e imágenes sin modificar los componentes visuales.
+ */
+
 export const PROFILE = {
   name: "Franco Gonzalez",
   initials: "FG",

@@ -2,11 +2,25 @@ import { Github, Linkedin, Download, ShieldCheck } from 'lucide-react';
 import { PROFILE } from '../constants/data';
 import SocialButton from '../components/SocialButton';
 
+/**
+ * Seccion Hero (Sobre mí).
+ * 
+ * Primera vista que recibe al usuario ("Above the fold").
+ * Diseñado para captar la atención inmediatamente con una jerarquía visual clara:
+ * 1. Fondo técnico y moderno (patrón de grilla CSS puro para performance).
+ * 2. Presentación clara del rol y nombre.
+ * 3. Call to Actions (CTAs) directos: CV y Contacto.
+ * 
+ * Utiliza un diseño responsive que pasa de 1 columna en móvil a 2 columnas (Texto + Imagen) en desktop.
+ * Mantiene consistencia de datos consumiendo el objeto global `PROFILE`.
+ */
 const Hero = () => {
   return (
     <section id="sobre-mí" className="relative w-full px-4 md:px-8 pt-20 pb-20 overflow-hidden min-h-screen flex flex-col justify-center">
       
-      {/* FONDO DE CUADRÍCULA (GRID) */}
+      {/* FONDO DE CUADRÍCULA (GRID)
+          Implementación puramente CSS usando gradientes lineales para crear eefecto de papel milimetrado.
+          Más performante que usar una imagen SVG de fondo. */}
       <div className="absolute inset-0 -z-10 h-full w-full bg-white dark:bg-[#0a0a0a] 
       bg-[linear-gradient(to_right,#80808030_1px,transparent_1px),linear-gradient(to_bottom,#80808030_1px,transparent_1px)] 
       dark:bg-[linear-gradient(to_right,#ffffff10_1px,transparent_1px),linear-gradient(to_bottom,#ffffff10_1px,transparent_1px)] 

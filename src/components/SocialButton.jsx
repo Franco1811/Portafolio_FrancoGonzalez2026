@@ -1,5 +1,14 @@
+/**
+ * Botón Social Reutilizable.
+ * Abstrae los estilos repetitivos de los botones de redes sociales.
+ * Soporta variantes de color y asegura accesibilidad con aria-label y atributos de seguridad (noopener noreferrer).
+ * @param {string} href - URL destino.
+ * @param {Component} icon - Icono de Lucide React.
+ * @param {string} label - Texto para lectores de pantalla.
+ * @param {string} variant - 'primary' (github/default) o 'linkedin'.
+ */
 const SocialButton = ({ href, icon: Icon, label, variant = "primary" }) => {
-  // Estilos base
+  // Estilos base compartidos
   const baseStyles = "p-5 rounded-2xl transition-all hover:scale-110 border border-transparent dark:border-[#333] flex items-center justify-center";
   
   // Variantes de color

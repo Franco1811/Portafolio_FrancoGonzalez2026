@@ -3,6 +3,16 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Award, Globe, Cpu, CheckCircle2, ExternalLink, Zap } from 'lucide-react';
 import { STACK, CERTIFICATIONS, LANGUAGES } from '../constants/data';
 
+/**
+ * Sección de Stack Tecnológico y Habilidades.
+ * 
+ * Organiza las competencias del desarrollador en 3 pestañas interactivas para reducir la carga cognitiva:
+ * 1. Tecnologías: Stack técnico agrupado por área (Frontend, Backend, Tools).
+ * 2. Certificaciones: Credenciales académicas y cursos.
+ * 3. Idiomas: Nivel de competencia lingüística.
+ * 
+ * Implementa un sistema de gestión de tabs local y renderizado condicional.
+ */
 const Stack = () => {
   const [activeTab, setActiveTab] = useState("tech");
 
@@ -12,7 +22,11 @@ const Stack = () => {
     { id: "lang", label: "Idiomas", icon: Globe },
   ];
 
-  // Helper para decidir si usar CDN naranja o URL directa
+  /**
+   * Helper para resolver la fuente del ícono de tecnología.
+   * Soporta URLs directas (para logos custom) o slugs de SimpleIcons (para logos estándar).
+   * @param {string} iconString - URL completa o slug de la tecnología
+   */
   const getIconSource = (iconString) => {
     if (iconString.startsWith("http")) {
       return iconString; // Es una URL directa (PowerBI/Excel)

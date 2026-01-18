@@ -2,6 +2,12 @@ import { useTheme } from '../context/ThemeContext';
 import { Sun, Moon, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
+/**
+ * Componente Navbar: Barra de navegación responsiva.
+ * - En escritorio: Muestra links directos y toggle de tema.
+ * - En móvil: Muestra menú hamburguesa desplegable.
+ * Utiliza backdrop-blur para efecto de vidrio sobre el contenido.
+ */
 const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
