@@ -115,7 +115,7 @@ export const CERTIFICATIONS = [
         id: 1,
         title: "SQL Fundamentals",
         issuer: "DataCamp",
-        date: "2024",
+        date: "2026",
         link: "https://www.datacamp.com/statement-of-accomplishment/track/bdb9ea4d45705e20fbca78e1eca607f462ff972a?raw=1",
         icon: "datacamp"
     },
@@ -123,7 +123,7 @@ export const CERTIFICATIONS = [
         id: 2,
         title: "Excel Fundamentals",
         issuer: "DataCamp",
-        date: "2024",
+        date: "2026",
         link: "https://www.datacamp.com/statement-of-accomplishment/track/e520d29273fd4fa9d4a62387944cb3a2e58a2ae9?raw=1",
         icon: "datacamp"
     },
@@ -139,7 +139,7 @@ export const CERTIFICATIONS = [
         id: 4,
         title: "Intermediate English Certificate",
         issuer: "ICPNA",
-        date: "2023",
+        date: "2024",
         link: "https://drive.google.com/file/d/1UiYb5HAkosgBP7d3yhL5DG2DzZc48el1/view?usp=sharing",
         icon: "https://img.icons8.com/?size=100&id=6358&format=png&color=FD7E14"
     }
