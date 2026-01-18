@@ -138,13 +138,15 @@ const Stack = () => {
                         >
                             {CERTIFICATIONS.map((cert) => (
                                 <div key={cert.id} className="bg-white dark:bg-[#0f0f0f] p-6 rounded-2xl border border-gray-200 dark:border-[#262626] flex items-start gap-4 hover:border-orange-500/50 transition-colors">
+                                    {/* Contenedor del icono: Unificado para todos (siempre oscuro/claro según tema) */}
                                     <div className="p-3 rounded-xl bg-gray-100 dark:bg-[#1a1a1a]">
-                                        {/* Lógica mejorada para iconos: Soporta URL completa o slug de SimpleIcons */}
                                         <img 
-                                            src={cert.icon.startsWith('http') ? cert.icon : `https://cdn.simpleicons.org/${cert.icon}`} 
-                                            className={`w-6 h-6 ${cert.icon.startsWith('http') ? '' : 'dark:invert'}`} 
+                                            // Si es URL (English), la usa directo. Si es slug (DataCamp), usa SimpleIcons con color NARANJA forzado (/FD7E14)
+                                            src={cert.icon.startsWith('http') ? cert.icon : `https://cdn.simpleicons.org/${cert.icon}/FD7E14`} 
+                                            // Quitamos filtros de inversión para que siempre se vea el color real (o el naranja que pedimos)
+                                            className="w-6 h-6 object-contain"
                                             alt="issuer"
-                                            onError={(e) => e.target.src = "https://cdn.simpleicons.org/codepen"} // Fallback
+                                            onError={(e) => e.target.src = "https://cdn.simpleicons.org/codepen/FD7E14"} // Fallback también naranja
                                         />
                                     </div>
                                     <div>
