@@ -85,9 +85,17 @@ const Hero = () => {
              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] lg:w-[700px] lg:h-[700px] bg-gradient-to-br from-orange-500/20 to-blue-500/20 blur-[120px] rounded-full pointer-events-none"></div>
              
              <div className="relative w-80 h-80 md:w-[450px] md:h-[450px] lg:w-[520px] lg:h-[520px] rounded-full bg-[#1a1a1a] border-[3px] border-[#333] flex items-center justify-center shadow-2xl z-10 overflow-hidden group">
-                <span className="text-9xl lg:text-[12rem] font-bold text-gray-800 group-hover:text-white transition-colors">
-                  {PROFILE.initials}
-                </span>
+                {PROFILE.image ? (
+                  <img 
+                    src={PROFILE.image} 
+                    alt={PROFILE.name}
+                    className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500"
+                  />
+                ) : (
+                  <span className="text-9xl lg:text-[12rem] font-bold text-gray-800 group-hover:text-white transition-colors">
+                    {PROFILE.initials}
+                  </span>
+                )}
              </div>
 
              <div className="absolute bottom-4 right-4 lg:bottom-10 lg:-right-6 bg-white/80 dark:bg-[#0f0f0f]/90 backdrop-blur-xl border border-gray-200 dark:border-[#333] p-4 pr-8 rounded-2xl flex items-center gap-5 shadow-2xl z-20 animate-bounce-slow">
