@@ -89,7 +89,7 @@ const Hero = () => {
                   <img 
                     src={PROFILE.image} 
                     alt={PROFILE.name}
-                    className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500"
+                    className="w-full h-full object-cover"
                   />
                 ) : (
                   <span className="text-9xl lg:text-[12rem] font-bold text-gray-800 group-hover:text-white transition-colors">

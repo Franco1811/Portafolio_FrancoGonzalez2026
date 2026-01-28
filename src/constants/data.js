@@ -7,7 +7,7 @@
 export const PROFILE = {
     name: "Franco Gonzalez",
     initials: "FG",
-    image: "/ruta-a-tu-foto.jpg", // TODO: Sube tu foto a la carpeta public y actualiza esta ruta (ej: "/mi-foto.png")
+    image: "/FotoFranco.jpeg", 
     status: {
         text: "Disponible para trabajar",
         isOnline: true
@@ -23,7 +23,7 @@ export const PROFILE = {
         linkedin: "https://www.linkedin.com/in/franco-gonzalez-a17243213/",
         email: "francogonzalezpoma18@gmail.com",
         whatsapp: "51955866054",
-        cv: "/cv_franco_gonzalez.pdf" // TODO: Sube tu CV a public con este nombre
+        cv: "/CV-FrancoGonzalez2026.pdf" 
     }
 };
 
