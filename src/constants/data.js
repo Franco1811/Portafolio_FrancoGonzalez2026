@@ -23,7 +23,7 @@ export const PROFILE = {
         linkedin: "https://www.linkedin.com/in/franco-gonzalez-a17243213/",
         email: "francogonzalezpoma18@gmail.com",
         whatsapp: "51955866054",
-        cv: "/CV-FrancoGonzalez2026.pdf" 
+        cv: "/CV_FrancoGonzalez2026.pdf" 
     }
 };
 
